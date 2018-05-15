@@ -1,5 +1,5 @@
 #
-# system.prop for montana
+# vendor.prop for montana
 #
 
 # Camera
