@@ -22,7 +22,7 @@ FIRMWARE_FINGERPRINT_IMAGES := \
     fpctzappfingerprint.b03 fpctzappfingerprint.b04 fpctzappfingerprint.b05 \
     fpctzappfingerprint.b06 fpctzappfingerprint.mdt
 
-FIRMWARE_FINGERPRINT_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_FINGERPRINT_IMAGES)))
+FIRMWARE_FINGERPRINT_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_FINGERPRINT_IMAGES)))
 $(FIRMWARE_FINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Fingerprint Firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -35,7 +35,7 @@ ISDB_IMAGES := \
     isdbtmm.b00 isdbtmm.b01 isdbtmm.b02 isdbtmm.b03 isdbtmm.b04 isdbtmm.b05 \
     isdbtmm.b06 isdbtmm.mdt
 
-ISDB_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ISDB_IMAGES)))
+ISDB_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(ISDB_IMAGES)))
 $(ISDB_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "ISDB firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -49,7 +49,7 @@ SAMPLE_IMAGES := \
     smplap32.mdt smplap64.b00 smplap64.b01 smplap64.b02 smplap64.b03 smplap64.b04 smplap64.b05 \
     smplap64.b06 smplap64.mdt
 
-SAMPLE_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(SAMPLE_IMAGES)))
+SAMPLE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(SAMPLE_IMAGES)))
 $(SAMPLE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "SAMPLE firmware link: $@"
 	@mkdir -p $(dir $@)
