@@ -19,7 +19,7 @@
 $(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
 
 # Properties
-$(call inherit-product, device/motorola/montana/system_prop.mk)
+$(call inherit-product, device/motorola/montana/vendor_prop.mk)
 
 # Audio
 PRODUCT_COPY_FILES +=  \
