@@ -346,17 +346,17 @@ vendor/lib/libchromatix_s5k4h8_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k4h8_zsl_video_3a.so
 
 # Camera - firmware
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_1.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_1.fw:vendor/firmware/cpp_firmware_v1_5_1.fw
+etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera - flash
 vendor/lib/libflash_aw3641.so
@@ -509,18 +509,18 @@ vendor/framework/com.fingerprints.extension.jar
 vendor/firmware/libpn548ad_fw.so
 
 # Opalum firmware
-etc/firmware/opalum.rx.ext.config.0
-etc/firmware/opalum.rx.ext.config.1
-etc/firmware/opalum.rx.ext.config.2
-etc/firmware/opalum.rx.ext.config.3
-etc/firmware/opalum.tx.ext.config.0
-etc/firmware/opalum.tx.ext.config.1
-etc/firmware/opalum.tx.ext.config.2
-etc/firmware/opalum.tx.ext.config.3
+etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
+etc/firmware/opalum.rx.ext.config.1:vendor/firmware/opalum.rx.ext.config.1
+etc/firmware/opalum.rx.ext.config.2:vendor/firmware/opalum.rx.ext.config.2
+etc/firmware/opalum.rx.ext.config.3:vendor/firmware/opalum.rx.ext.config.3
+etc/firmware/opalum.tx.ext.config.0:vendor/firmware/opalum.tx.ext.config.0
+etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.1
+etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
+etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
 
 # Touchscreen firmware
-etc/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat
-etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
+etc/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat:vendor/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat
+etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat:vendor/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
 
 # Sensors
 framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
