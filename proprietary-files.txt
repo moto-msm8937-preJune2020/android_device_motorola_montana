@@ -525,6 +525,7 @@ etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
 # Sensors
 framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/sensors.qcom
+vendor/etc/init/android.hardware.sensors@1.0-service.rc|7b0777a287d4de84eb60888487882e5506342e21
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/sensor_calibrate.so
