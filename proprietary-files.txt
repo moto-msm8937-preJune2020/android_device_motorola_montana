@@ -523,23 +523,21 @@ etc/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat:vendor/firmware/s
 etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat:vendor/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
 
 # Sensors
-framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-vendor/bin/sensors.qcom
+framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|ecc38b9be0c4d422692cb4abb7f83c39da0b1c1e
+lib/vendor.qti.hardware.sensorscalibrate@1.0.so|bb4b035fbb218f24d6d3756a49f1fe1783f0c7cf
+lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|ca60dd4b133cbe3648358fdb388bdd6dfce20494
+vendor/bin/sensors.qti|55efd4aa20e6efb9d2c45175083e5bacc2e16ab2
 vendor/etc/init/android.hardware.sensors@1.0-service.rc|7b0777a287d4de84eb60888487882e5506342e21
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/sensor_calibrate.so
-vendor/lib/sensors.iio.so
-vendor/lib/sensors.ssc.so
-vendor/lib/sensors.rp.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/sensor_calibrate.so
-vendor/lib64/sensors.iio.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.rp.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib/libsensor1.so|2d94877029738fdea260a7b509a058b8ca569480
+vendor/lib/libsensor_reg.so|3addbda9add33dbb9a3272f19c60829fc9396877
+vendor/lib/sensor_calibrate.so|4464b751772f57cfa788dcc915038ed9bf4e6b74
+vendor/lib/sensors.ssc.so|30fed9477e6f8f857aa9570e3e6001e490a0c9b0
+vendor/lib/sensors.rp.so|420f902884d54442829d70364a8ca261d89c5dd3
+vendor/lib64/libsensor1.so|5044a4a7bf410eb8e46d67c1d116746b9a2326fa
+vendor/lib64/libsensor_reg.so|f4c2749b1e467e68009bbf5168d69587fbe90980
+vendor/lib64/sensor_calibrate.so|39bec104020666f5cdbc5601cc71349dbfb52ba8
+vendor/lib64/sensors.ssc.so|bea3ed600cacd7b770d1d68d41fe8d8fbec29f56
+vendor/lib64/sensors.rp.so|e5f7cd83af95bb8eb91c2999cb2f54340455c81f
 
 # Misc
 lib/libbabysit.so
