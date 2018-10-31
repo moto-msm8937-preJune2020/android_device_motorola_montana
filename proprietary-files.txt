@@ -506,7 +506,7 @@ vendor/lib/com.fingerprints.extension@1.0_vendor.so|9703321ae793088c6585fe021e38
 vendor/framework/com.fingerprints.extension.jar
 
 # NFC
-vendor/firmware/libpn548ad_fw.so
+vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 
 # Opalum firmware
 etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
