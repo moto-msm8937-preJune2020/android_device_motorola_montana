@@ -27,7 +27,7 @@ $(FIRMWARE_FINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Fingerprint Firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+	$(hide) ln -sf /vendor/firmware_mnt/image/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_FINGERPRINT_SYMLINKS)
 
@@ -40,7 +40,7 @@ $(ISDB_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "ISDB firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+	$(hide) ln -sf /vendor/firmware_mnt/image/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(ISDB_SYMLINKS)
 
@@ -54,7 +54,7 @@ $(SAMPLE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "SAMPLE firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+	$(hide) ln -sf /vendor/firmware_mnt/image/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(SAMPLE_SYMLINKS)
 
@@ -78,16 +78,16 @@ $(shell mkdir -p $(TARGET_OUT)/rfs/msm/mpss/readonly)
 $(shell mkdir -p $(TARGET_OUT)/rfs/msm/adsp/readonly)
 
 $(shell ln -s /data/tombstones/modem $(TARGET_OUT)/rfs/msm/mpss/ramdumps)
-$(shell ln -s /persist/rfs/msm/mpss $(TARGET_OUT)/rfs/msm/mpss/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/msm/mpss/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/msm/mpss/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/msm/mpss/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/msm/mpss $(TARGET_OUT)/rfs/msm/mpss/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/msm/mpss/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/msm/mpss/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/msm/mpss/readonly/firmware)
 
 $(shell ln -s /data/tombstones/lpass $(TARGET_OUT)/rfs/msm/adsp/ramdumps)
-$(shell ln -s /persist/rfs/msm/adsp $(TARGET_OUT)/rfs/msm/adsp/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/msm/adsp/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/msm/adsp/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/msm/adsp/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/msm/adsp $(TARGET_OUT)/rfs/msm/adsp/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/msm/adsp/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/msm/adsp/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/msm/adsp/readonly/firmware)
 
 #########################################################################
 # MDM Folders
@@ -97,22 +97,22 @@ $(shell mkdir -p $(TARGET_OUT)/rfs/mdm/adsp/readonly)
 $(shell mkdir -p $(TARGET_OUT)/rfs/mdm/sparrow/readonly)
 
 $(shell ln -s /data/tombstones/modem $(TARGET_OUT)/rfs/mdm/mpss/ramdumps)
-$(shell ln -s /persist/rfs/mdm/mpss $(TARGET_OUT)/rfs/mdm/mpss/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/mdm/mpss/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/mpss/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/mdm/mpss/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/mdm/mpss $(TARGET_OUT)/rfs/mdm/mpss/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/mdm/mpss/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/mpss/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/mdm/mpss/readonly/firmware)
 
 $(shell ln -s /data/tombstones/lpass $(TARGET_OUT)/rfs/mdm/adsp/ramdumps)
-$(shell ln -s /persist/rfs/mdm/adsp $(TARGET_OUT)/rfs/mdm/adsp/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/mdm/adsp/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/adsp/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/mdm/adsp/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/mdm/adsp $(TARGET_OUT)/rfs/mdm/adsp/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/mdm/adsp/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/adsp/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/mdm/adsp/readonly/firmware)
 
 $(shell ln -s /data/tombstones/sparrow $(TARGET_OUT)/rfs/mdm/sparrow/ramdumps)
-$(shell ln -s /persist/rfs/mdm/sparrow $(TARGET_OUT)/rfs/mdm/sparrow/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/mdm/sparrow/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/sparrow/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/mdm/sparrow/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/mdm/sparrow $(TARGET_OUT)/rfs/mdm/sparrow/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/mdm/sparrow/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/mdm/sparrow/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/mdm/sparrow/readonly/firmware)
 
 #########################################################################
 # APQ Folders
@@ -120,10 +120,10 @@ $(shell ln -s /firmware $(TARGET_OUT)/rfs/mdm/sparrow/readonly/firmware)
 $(shell mkdir -p $(TARGET_OUT)/rfs/apq/gnss/readonly)
 
 $(shell ln -s /data/tombstones/modem $(TARGET_OUT)/rfs/apq/gnss/ramdumps)
-$(shell ln -s /persist/rfs/apq/gnss $(TARGET_OUT)/rfs/apq/gnss/readwrite)
-$(shell ln -s /persist/rfs/shared $(TARGET_OUT)/rfs/apq/gnss/shared)
-$(shell ln -s /persist/hlos_rfs/shared $(TARGET_OUT)/rfs/apq/gnss/hlos)
-$(shell ln -s /firmware $(TARGET_OUT)/rfs/apq/gnss/readonly/firmware)
+$(shell ln -s /mnt/vendor/persist/rfs/apq/gnss $(TARGET_OUT)/rfs/apq/gnss/readwrite)
+$(shell ln -s /mnt/vendor/persist/rfs/shared $(TARGET_OUT)/rfs/apq/gnss/shared)
+$(shell ln -s /mnt/vendor/persist/hlos_rfs/shared $(TARGET_OUT)/rfs/apq/gnss/hlos)
+$(shell ln -s /vendor/firmware_mnt $(TARGET_OUT)/rfs/apq/gnss/readonly/firmware)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
