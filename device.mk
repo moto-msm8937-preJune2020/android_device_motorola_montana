@@ -44,12 +44,14 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     libnfc \
-    libnfc_jni \
-    nfc_nci.msm8937 \
+    com.android.nfc_extras \
     NfcNci \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    SecureElement \
     Tag \
     com.android.nfc_extras \
-    android.hardware.nfc@1.0-impl
+    android.hardware.nfc@1.1-service
 
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.nfc_extras.xml
