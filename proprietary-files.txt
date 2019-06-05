@@ -51,7 +51,7 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmot_gpu_mapper.so|f02bc5a8389dbdeb97f3e9812c830953e03b016e
+vendor/lib/libmot_gpu_mapper.so|1886a4dbb7d90000525c586091c26915cdad3083
 vendor/lib/lib_motsensorlistener.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegenc.so
