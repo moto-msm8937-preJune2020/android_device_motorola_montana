@@ -24,3 +24,7 @@ export VENDOR=motorola
 export DEVICE_BRINGUP_YEAR=2018
 
 ./"../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" $@
+
+DEVICE_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}"
+
+sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera2_sensor_modules.so"
