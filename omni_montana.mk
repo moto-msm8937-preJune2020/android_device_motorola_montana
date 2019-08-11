@@ -14,9 +14,15 @@
 # limitations under the License.
 #
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from msm8937-common
+$(call inherit-product-if-exists, device/motorola/msm8937-common/msm8937.mk)
 
-$(call inherit-product, device/motorola/montana/full_montana.mk)
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
+PRODUCT_DEVICE := montana
 PRODUCT_NAME := omni_montana
+PRODUCT_BRAND := Motorola
+PRODUCT_MODEL := Moto G5S
+PRODUCT_MANUFACTURER := Motorola
