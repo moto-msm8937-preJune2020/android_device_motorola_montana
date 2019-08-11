@@ -18,5 +18,10 @@ DEVICE_PATH := device/motorola/montana
 
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+
 # Kernel
 TARGET_KERNEL_CONFIG := montana_defconfig
