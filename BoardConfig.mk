@@ -25,3 +25,6 @@ TARGET_CPU_ABI := arm64-v8a
 
 # Kernel
 TARGET_KERNEL_CONFIG := montana_defconfig
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
