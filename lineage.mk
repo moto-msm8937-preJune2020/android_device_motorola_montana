@@ -44,6 +44,6 @@ PRODUCT_MODEL := Moto G5S
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="montana_retail-user 8.1.0 OPPS28.65-37-7-4 1dd5 release-keys"
+    PRIVATE_BUILD_DESC="montana_retail-user 8.1.0 OPPS28.65-37-7-11 7f8a6 release-keys"
 
-BUILD_FINGERPRINT := motorola/montana_retail/montana:8.1.0/OPPS28.65-37-7-4/1dd5:user/release-keys
+BUILD_FINGERPRINT := motorola/montana_retail/montana:8.1.0/OPPS28.65-37-7-11/7f8a6:user/release-keys
