@@ -1,6 +1,6 @@
 # Proprietary files for montana
 
-# ACDB Calibration
+# Audio - ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
@@ -9,7 +9,7 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb|1953b2dd9c0123924fabcc9180ed5fe08cff2642
 
-# EGL
+# Graphics
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
@@ -32,19 +32,6 @@ vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 
-# Camera - Firmware
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_1.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
-
 # EMMC firmware
 etc/firmware/emmc_ffu_15_RC14MB.fw
 etc/firmware/emmc_ffu_15_RC1BMB.fw
@@ -58,60 +45,31 @@ vendor/bin/mm-qcamera-daemon
 vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc|8c9efbc2c8a9d94910eca928ad062ca4ba2555b1
 vendor/lib/hw/camera.msm8937.so|e606603da6936c85902c5b75fb6237843f98a785
 vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so|8f5226f60db9d04e84855a94b757e99f0f69c0a6
-vendor/lib/motcamera.device@1.0-impl.so|142288bba9771103291042ef5bdf4a204ae8c7d2
-vendor/lib/motorola.hardware.camera.device@1.0.so
-vendor/lib/motorola.hardware.camera.device@1.0_vendor.so|2f742f42141fa1f4f8eb3c8326ec9f1aa36ee451
-vendor/lib/motorola.hardware.camera.provider@2.4.so
-vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so|f483b1a8436a20a1e990dbc50b41f1902684376b
-
 vendor/lib/libactuator_dw9718s.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
 vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_mot_ak7371.so
 vendor/lib/libactuator_pseudo.so
-vendor/lib/libadvalgcore.so
-vendor/lib/libavenhancements.so
-vendor/lib/libcamerabgproc-jni.so
-vendor/lib/libcamerabgprocservice.so
-vendor/lib/libchromaflash.so
-vendor/lib/libfastcvopt.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libjscore.so
-vendor/lib/libjustshoot.so
-vendor/lib/libmbs.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmm-omxcore.so
-vendor/lib/libmm-qcamera.so
-vendor/lib/libmm-qdcm.so
-vendor/lib/libmorpho_image_stabilizer4.so
-vendor/lib/libllvd_smore.so
-vendor/lib/libllvd_sw_tnr.so
-vendor/lib/libmmipstreamaal.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmosal_proprietary.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmot_gpu_mapper.so
-vendor/lib/libmot_lux_standardization.so
-vendor/lib/libmotocalibration.so
-vendor/lib/liboptizoom.so
-vendor/lib/libprotobuf-cpp-lpro.so
+vendor/lib/lib_motsensorlistener.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libscveCleverCapture.so
-vendor/lib/libscveImageCloning.so
-vendor/lib/libscveMotionVector.so
-vendor/lib/libscvePanorama.so
-vendor/lib/libtrueportrait.so
-vendor/lib/libubifocus.so
-# Camera - Chromatix
+vendor/lib/motcamera.device@1.0-impl.so|142288bba9771103291042ef5bdf4a204ae8c7d2
+vendor/lib/motorola.hardware.camera.device@1.0.so
+vendor/lib/motorola.hardware.camera.device@1.0_vendor.so|2f742f42141fa1f4f8eb3c8326ec9f1aa36ee451
+vendor/lib/motorola.hardware.camera.provider@2.4.so
+vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so|f483b1a8436a20a1e990dbc50b41f1902684376b
+
+# Camera - chromatix
 vendor/lib/libchromatix_ar1335_common.so
 vendor/lib/libchromatix_ar1335_cpp_hfr_120.so
 vendor/lib/libchromatix_ar1335_cpp_liveshot.so
@@ -394,29 +352,26 @@ vendor/lib/libchromatix_s5k4h8_video_full.so
 vendor/lib/libchromatix_s5k4h8_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k4h8_zsl_video_3a.so
 
-# Camera flash
+# Camera - firmware
+etc/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_1.fw
+etc/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw
+
+# Camera - flash
 vendor/lib/libflash_aw3641.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libflash_sky81298.so
 vendor/lib/libflash_wd3100.so
 
 # Camera - mmcamera
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_dcrf.so
-vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so|e05fbe099777c8baed8089799a3510edda5a0689
-vendor/lib/libmmcamera2_imglib_modules.so|2ee1a53dbfe7ff9e9fe4fb463df3e99b332f3ce7
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so|33a16be4bdd1c46ad377556941d4dd4c4d3911c8
-vendor/lib/libmmcamera2_mct_shimlayer.so
-vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so|fcddc3e8fb10bc81b9fe3c9f6898f48385eb2254
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so|3b15103bcf33c8acbe4d8630f1d091a465c1496e
 vendor/lib/libmmcamera_ar1335.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_chromaflash_lib.so
@@ -504,18 +459,58 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_vstab_module.so|cc93221dcfff729a9af03b556917ac74aafc4e80
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_dcrf.so
+vendor/lib/libmmcamera2_frame_algorithm.so
+vendor/lib/libmmcamera2_iface_modules.so|e05fbe099777c8baed8089799a3510edda5a0689
+vendor/lib/libmmcamera2_imglib_modules.so|2ee1a53dbfe7ff9e9fe4fb463df3e99b332f3ce7
+vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_mct.so|33a16be4bdd1c46ad377556941d4dd4c4d3911c8
+vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_pp_buf_mgr.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_sensor_modules.so|fcddc3e8fb10bc81b9fe3c9f6898f48385eb2254
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_modules.so|3b15103bcf33c8acbe4d8630f1d091a465c1496e
+
+# Camera - postprocessing
+vendor/lib/libadvalgcore.so
+vendor/lib/libavenhancements.so
+vendor/lib/libcamerabgproc-jni.so
+vendor/lib/libcamerabgprocservice.so
+vendor/lib/libchromaflash.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libjscore.so
+vendor/lib/libjustshoot.so
+vendor/lib/libmbs.so
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libmm-omxcore.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmm-qdcm.so
+vendor/lib/libmorpho_image_stabilizer4.so
+vendor/lib/libllvd_smore.so
+vendor/lib/libllvd_sw_tnr.so
+vendor/lib/libmmipstreamaal.so
+vendor/lib/libmot_lux_standardization.so
+vendor/lib/libmotocalibration.so
+vendor/lib/liboptizoom.so
+vendor/lib/libprotobuf-cpp-lpro.so
+vendor/lib/libscveCleverCapture.so
+vendor/lib/libscveImageCloning.so
+vendor/lib/libscveMotionVector.so
+vendor/lib/libscvePanorama.so
+vendor/lib/libtrueportrait.so
+vendor/lib/libubifocus.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice|17cceb74e331c3b0c9d2ef1f456c220f49a0211f
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/com.fingerprints.extension@1.0_vendor.so|9703321ae793088c6585fe021e386133a192ae50
 -vendor/framework/com.fingerprints.extension.jar
-
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8937.so
-
-# Keystore
-vendor/lib/hw/keystore.msm8937.so
 
 # NFC
 vendor/firmware/libpn548ad_fw.so
@@ -540,10 +535,8 @@ etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
 # Sensors
 -framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/sensors.qcom
-vendor/lib/lib_motsensorlistener.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.iio.so
 vendor/lib/sensors.ssc.so
@@ -557,9 +550,7 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.rp.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# WCNSS
-vendor/bin/wcnss_filter
-
+# Misc
 lib/libbabysit.so
 lib/libcce-socketjni.so
 lib/libdmengine.so
@@ -570,9 +561,5 @@ lib/libpkip.so
 lib/libprovlib.so
 lib/libtpa.so
 lib/libtpa_core.so
-lib/libvpplibrary.so
 lib/libwbxmlparser.so
-vendor/lib/libdiag_system.so
 vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libqmi_cci_system.so
-vendor/lib64/libqmi_cci_system.so
