@@ -7,7 +7,7 @@ vendor/etc/acdbdata/Global_cal.acdb
 vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
-vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb|1953b2dd9c0123924fabcc9180ed5fe08cff2642
 
 # EGL
 vendor/lib/egl/eglsubAndroid.so
@@ -55,14 +55,14 @@ etc/firmware/emmc_ffu_15_RX1BMB.fw
 # Camera
 vendor/bin/hw/motorola.hardware.camera.provider@2.4-service
 vendor/bin/mm-qcamera-daemon
-vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc
-vendor/lib/hw/camera.msm8937.so
-vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so
-vendor/lib/motcamera.device@1.0-impl.so
+vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc|8c9efbc2c8a9d94910eca928ad062ca4ba2555b1
+vendor/lib/hw/camera.msm8937.so|e606603da6936c85902c5b75fb6237843f98a785
+vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so|8f5226f60db9d04e84855a94b757e99f0f69c0a6
+vendor/lib/motcamera.device@1.0-impl.so|142288bba9771103291042ef5bdf4a204ae8c7d2
 vendor/lib/motorola.hardware.camera.device@1.0.so
-vendor/lib/motorola.hardware.camera.device@1.0_vendor.so
+vendor/lib/motorola.hardware.camera.device@1.0_vendor.so|2f742f42141fa1f4f8eb3c8326ec9f1aa36ee451
 vendor/lib/motorola.hardware.camera.provider@2.4.so
-vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so
+vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so|f483b1a8436a20a1e990dbc50b41f1902684376b
 
 vendor/lib/libactuator_dw9718s.so
 vendor/lib/libactuator_dw9763.so
@@ -405,18 +405,18 @@ vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_iface_modules.so|e05fbe099777c8baed8089799a3510edda5a0689
+vendor/lib/libmmcamera2_imglib_modules.so|2ee1a53dbfe7ff9e9fe4fb463df3e99b332f3ce7
 vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_mct.so|33a16be4bdd1c46ad377556941d4dd4c4d3911c8
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so|fcddc3e8fb10bc81b9fe3c9f6898f48385eb2254
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_modules.so|3b15103bcf33c8acbe4d8630f1d091a465c1496e
 vendor/lib/libmmcamera_ar1335.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_chromaflash_lib.so
@@ -489,7 +489,7 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
-vendor/lib/libmmcamera_quadracfa.so
+vendor/lib/libmmcamera_quadracfa.so|82c7cbcd6fe45674bba0d78813052a42f55d925a
 vendor/lib/libmmcamera_s5k3p3.so
 vendor/lib/libmmcamera_s5k3p3_eeprom.so
 vendor/lib/libmmcamera_s5k4h8.so
@@ -503,12 +503,12 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_ubifocus_lib.so
-vendor/lib/libmmcamera_vstab_module.so
+vendor/lib/libmmcamera_vstab_module.so|cc93221dcfff729a9af03b556917ac74aafc4e80
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice|17cceb74e331c3b0c9d2ef1f456c220f49a0211f
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/com.fingerprints.extension@1.0_vendor.so
+vendor/lib/com.fingerprints.extension@1.0_vendor.so|9703321ae793088c6585fe021e386133a192ae50
 -vendor/framework/com.fingerprints.extension.jar
 
 # Gatekeeper
