@@ -32,13 +32,6 @@ vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 
-# EMMC firmware
-etc/firmware/emmc_ffu_15_RC14MB.fw
-etc/firmware/emmc_ffu_15_RC1BMB.fw
-etc/firmware/emmc_ffu_15_RE1BMB.fw
-etc/firmware/emmc_ffu_15_RX14MB.fw
-etc/firmware/emmc_ffu_15_RX1BMB.fw
-
 # Camera
 vendor/bin/hw/motorola.hardware.camera.provider@2.4-service
 vendor/bin/mm-qcamera-daemon
@@ -510,13 +503,10 @@ vendor/lib/libubifocus.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice|17cceb74e331c3b0c9d2ef1f456c220f49a0211f
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/com.fingerprints.extension@1.0_vendor.so|9703321ae793088c6585fe021e386133a192ae50
--vendor/framework/com.fingerprints.extension.jar
+vendor/framework/com.fingerprints.extension.jar
 
 # NFC
 vendor/firmware/libpn548ad_fw.so
-
-# Other firmware
-etc/firmware/DE.o.msm8937
 
 # Opalum firmware
 etc/firmware/opalum.rx.ext.config.0
@@ -533,7 +523,7 @@ etc/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat
 etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
 
 # Sensors
--framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/sensors.qcom
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
