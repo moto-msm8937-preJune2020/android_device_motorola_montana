@@ -22,6 +22,7 @@ include device/motorola/msm8937-common/BoardConfigCommon.mk
 -include vendor/motorola/montana/BoardConfigVendor.mk
 
 DEVICE_PATH := device/motorola/montana
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := montana,montana_retail
