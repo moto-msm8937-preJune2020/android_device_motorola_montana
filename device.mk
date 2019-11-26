@@ -81,3 +81,7 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-montana.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.msm8937
