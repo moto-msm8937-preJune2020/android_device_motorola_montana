@@ -1,7 +1,7 @@
 [
   {
     "remote":      "github",
-    "repository":  "moto-msm8937-common/android_device_motorola_msm8937-common",
+    "repository":  "moto-msm8937/android_device_motorola_msm8937-common",
     "target_path": "device/motorola/msm8937-common",
     "revision":    "twrp-7.1"
   }
