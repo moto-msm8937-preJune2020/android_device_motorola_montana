@@ -38,6 +38,7 @@ vendor/bin/mm-qcamera-daemon
 vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc
 vendor/lib/hw/camera.msm8937.so
 vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so
+vendor/lib/lib_mottof.so|c08af47e7a07c1ea1638c068bcb19cef4984e8ff
 vendor/lib/libactuator_dw9718s.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
@@ -51,7 +52,7 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmot_gpu_mapper.so|1886a4dbb7d90000525c586091c26915cdad3083
+vendor/lib/libmot_gpu_mapper.so|05d592e120bb9de0e6bcbf3fa65067701dcecbcb
 vendor/lib/lib_motsensorlistener.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegenc.so
@@ -436,7 +437,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_ppeiscore.so|5b08b0d3d74a71153b5682771bc79203376210e7
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_s5k3p3.so
 vendor/lib/libmmcamera_s5k3p3_eeprom.so
@@ -451,7 +452,7 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_ubifocus_lib.so
-vendor/lib/libmmcamera_vstab_module.so
+vendor/lib/libmmcamera_vstab_module.so|8cc760ee9501d3f729c62f430a7bf0daeff0cfbe
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -471,12 +472,12 @@ vendor/lib/libmmcamera2_stats_modules.so
 
 # Camera - postprocessing
 vendor/lib/libadvalgcore.so
-vendor/lib/libavenhancements.so
+vendor/lib/libavenhancements.so|a22a15a882ada774241ae2b9a41a093d94d115a2
 vendor/lib/libcamerabgproc-jni.so
-vendor/lib/libcamerabgprocservice.so
+vendor/lib/libcamerabgprocservice.so|5e17355600fc6ea832f68625c869853d6bce9cc3
 vendor/lib/libchromaflash.so
 vendor/lib/libfastcvopt.so
-vendor/lib/libjscore.so
+vendor/lib/libjscore.so|bffdc687f62576a35e768eb5a311ac12399a46a4
 vendor/lib/libjustshoot.so|313a78217d6d0e67051855be986ca50fe612f530
 vendor/lib/libmbs.so
 vendor/lib/libmm-disp-apis.so
