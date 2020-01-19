@@ -500,9 +500,9 @@ vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice|17cceb74e331c3b0c9d2ef1f456c220f49a0211f
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/com.fingerprints.extension@1.0_vendor.so|9703321ae793088c6585fe021e386133a192ae50
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc|46f53179c4f6e8da3ea71d853f5f28a9bc96cfb4
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|c6d48c42b8cfe114b11586a503ed5e320e0d5520
+vendor/lib/com.fingerprints.extension@1.0_vendor.so:vendor/lib/com.fingerprints.extension@1.0.so|dec8192f17888a3aa9b32573d2351207a649d1d2
 vendor/framework/com.fingerprints.extension.jar
 
 # NFC

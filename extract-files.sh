@@ -28,3 +28,4 @@ export DEVICE_BRINGUP_YEAR=2018
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}"
 
 sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera2_sensor_modules.so"
+sed -i 's|fpcservice|service-fpc|g' "${DEVICE_BLOB_ROOT}/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc"
